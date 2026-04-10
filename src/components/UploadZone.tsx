@@ -84,7 +84,7 @@ export default function UploadZone({ onFileSelected, isAnalyzing }: UploadZonePr
           onDrop={handleDrop}
           onClick={() => fileInputRef.current?.click()}
           className={`
-            relative cursor-pointer rounded-xl border-2 border-dashed transition-all duration-300 p-12 text-center hover:scale-[1.01]
+            relative cursor-pointer rounded-xl border-2 border-dashed transition-all duration-300 p-6 sm:p-12 text-center hover:scale-[1.01]
             ${dragOver
               ? "border-primary bg-primary/5 glow-primary"
               : "border-border hover:border-primary/50 hover:bg-muted/30"
@@ -125,7 +125,7 @@ export default function UploadZone({ onFileSelected, isAnalyzing }: UploadZonePr
                 Supports JPG, PNG, MP4, MOV, AVI
               </p>
             </div>
-            <div className="flex gap-6 text-muted-foreground mt-2">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-muted-foreground mt-2">
               <span className="flex items-center gap-1.5 text-xs">
                 <Image className="w-3.5 h-3.5" /> Images
               </span>
@@ -144,7 +144,7 @@ export default function UploadZone({ onFileSelected, isAnalyzing }: UploadZonePr
           exit={{ opacity: 0, scale: 0.95 }}
           className="space-y-3"
         >
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
             <span className="text-sm text-muted-foreground font-mono">
               {previews.length} file{previews.length > 1 ? 's' : ''} selected
             </span>

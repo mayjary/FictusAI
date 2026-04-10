@@ -76,15 +76,15 @@ export default function ResultDisplay({ result, media }: ResultDisplayProps) {
       )}
 
       {/* Main result card */}
-      <div className={`glass-card p-6 border ${c.bgClass} ${c.glowClass}`}>
-        <div className="flex items-center gap-4">
+      <div className={`glass-card p-4 sm:p-6 border ${c.bgClass} ${c.glowClass}`}>
+        <div className="flex items-start sm:items-center gap-4">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className={`w-14 h-14 rounded-xl flex items-center justify-center ${c.bgClass}`}
+            className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center ${c.bgClass} shrink-0`}
           >
-            <Icon className={`w-7 h-7 ${c.colorClass}`} />
+            <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${c.colorClass}`} />
           </motion.div>
           <div className="flex-1">
             <h3 className={`text-lg font-bold font-mono tracking-wider ${c.colorClass}`}>
