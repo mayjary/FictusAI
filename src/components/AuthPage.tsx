@@ -63,7 +63,7 @@ export default function AuthPage({ onLogin, onRegister, loading, error }: AuthPa
             <Shield className="w-8 h-8 text-primary" />
           </motion.div>
           <h1 className="text-2xl font-bold text-foreground font-mono tracking-tight">
-            DEEPFAKE DETECTOR
+            CLARIUM AI
           </h1>
           <p className="text-muted-foreground text-sm mt-1">
             AI-powered forensic media analysis

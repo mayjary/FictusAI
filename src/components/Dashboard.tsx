@@ -146,9 +146,9 @@ export default function Dashboard({ username, onLogout }: DashboardProps) {
           </div>
           <div className="min-w-0">
             <h1 className="text-lg font-bold text-sidebar-foreground font-mono tracking-tight truncate">
-              DEEPFAKE DETECTOR
+              CLARIUM AI
             </h1>
-            <p className="text-xs text-muted-foreground">AI-powered forensic analysis</p>
+            <p className="text-xs text-muted-foreground">AI-powered deepfake analysis</p>
           </div>
         </div>
       </div>
